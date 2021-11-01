@@ -1,0 +1,44 @@
+@font-face {
+  src: url(./fonts/Sansation_Bold.ttf);
+  font-family: sensationbold;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+}
+.search-bar {
+  color: #d8d8ea;
+  display: block;
+  width: 30%;
+  margin-left: 4rem;
+}
+.search-bar ::placeholder {
+  color: #d8d8ea;
+}
+.nav-text {
+  font-family: sensationbold;
+  color: #d8d8ea;
+}
+
+@media (max-width: 414px) {
+  .search-bar {
+    display: none;
+  }
+}

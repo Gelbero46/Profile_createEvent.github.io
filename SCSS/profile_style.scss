@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;700;900&display=swap");
+
+:root {
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+/* font-sizes */
+.font-size-lg {
+  font-size: 2.125rem;
+}
+.font-size-md {
+  font-size: 1.5625rem;
+}
+
+.font-size-sm {
+  font-size: 1.25rem;
+}
+
+.font-size-xs {
+  font-size: 1.125rem;
+}
+
+.nav-item-img {
+  width: 2em;
+}
+.dropdown-menu {
+  background-color: #d8d8ea;
+  right: -2em;
+}
+
+.dropdown-menu.show {
+  display: inline-block;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.color-l-blue {
+  color: #012762;
+}
+.color-l-create {
+  color: #2750a8 !important;
+}
+.form-control-lg {
+  height: 3.5rem;
+  border-radius: 0;
+}
+textarea.form-control {
+  border-radius: 0;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+.container-width {
+  width: 700px;
+  margin: 3rem 0 4rem;
+
+  .header {
+    margin-bottom: 3rem;
+    & > * + * {
+      margin-top: 3.125rem;
+    }
+  }
+}
+// .dropdown-toggle::after {
+//   display: block;
+// }
+
+.img-container {
+  text-align: center;
+  &-inner {
+    position: relative;
+    display: inline-block;
+
+    .img-edit {
+      position: absolute;
+      bottom: 1em;
+      right: 0.5em;
+      width: 40px;
+      height: 40px;
+      background-color: #2750a8;
+      background-image: url(../../icon/bytesize_edit.svg);
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: 50%;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: #3466d3;
+      }
+    }
+  }
+}
+
+.btn {
+  background-color: #2750a8;
+  padding: 0.95em 5.125em;
+}
+
+.button {
+  margin-top: 3rem;
+  &__center {
+    display: none;
+    text-align: center;
+  }
+  &__rounded {
+    padding: 0.75em 1.937em;
+    border-radius: 10px;
+  }
+}
+
+.cancel {
+  background-color: #fff;
+  &:hover {
+    background-color: #eee;
+  }
+  &.cancel__warning {
+    color: red;
+  }
+}
+
+.button.button__margin-top {
+  margin-top: 6rem;
+}
+
+.form-group {
+  .select {
+    position: relative;
+
+    &-element {
+      background-color: transparent;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &or {
+      position: absolute;
+      right: 0.2em;
+      top: 1em;
+      z-index: -1;
+    }
+  }
+}
+
+.d-flex {
+  column-gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .container-width {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* createEventBookVendor.html */
